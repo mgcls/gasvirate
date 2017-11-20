@@ -21,8 +21,8 @@ public class JdbcTodoListDAO implements TodoListDAO {
     private final DataSource dataSource;
 
     public JdbcTodoListDAO() {
-        dataSource = lookupDataSource();
-        initializeSchemaIfNeeded();
+        dataSource = null;  // lookupDataSource();
+        // initializeSchemaIfNeeded();
     }
 
     private DataSource lookupDataSource() {
